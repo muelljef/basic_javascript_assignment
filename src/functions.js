@@ -90,19 +90,8 @@ function parseGit(logArray)
       var ind = tempHash[0].length;
       tempStr = logArray[i].slice(ind + 1);
       tempDate = tempStr.split(' "', 1);
-      tempDateObj = new Date(tempDate);
       tempMsg = tempStr.slice((tempDate[0].length + 2), -1);
-      gitLogArray[i] = new GitLog(tempHash, tempDate, tempMsg);
+      gitLogArray[i] = new GitLog(tempHash, new Date(tempDate), tempMsg);
     }
   return gitLogArray;
 }
-/*
-var logs = ['3782618 Wed, 7 Jan 2015 21:42:26 -0800 "Initial commit"','c314332 Wed, 7 Jan 2015 22:02:38 -0800 "Add empty bio.md"'];
-var myHash = logs[0].split(' ', 1);
-console.log(myHash[0].length);
-
-var result = parseGit(logs);
-console.log(result[0].hash);
-console.log(result[0].date);
-console.log(result[0].message);
-*/

@@ -38,7 +38,55 @@ function returnObjectLiteral() {
 */
 
 //your code here
+function MessageLog(user)
+{
+  this.user = user;
+  this.messageLog = ' ';
+  this.sentLog = [];
+  this.logMessage = logMessage;
+  this.getSentMessage = getSentMessage;
+  this.totalSent = totalSent;
+  this.totalReceived = totalReceived;
+  this.received = 0;
+  this.sent = 0;
+}
 
+function logMessage(messageText, direction)
+{
+  if(direction === 1)
+    {
+      this.messageLog = messageText;
+      this.received++;
+    }
+  else if(direction === 0)
+    {
+      this.sentLog[(this.sent % 5)] = messageText;
+      this.sent++;
+    }
+}
+
+function getSentMessage(n)
+{
+  if((this.sent - 1 - n) >= 0)
+    {
+      var ind = (this.sent - 1 - n) % 5;
+      return this.sentLog[ind];
+    }
+  else
+    {
+      return 'Error: n too large or not enough messages';
+    }
+}
+
+function totalSent()
+{
+  return this.sent;
+}
+
+function totalReceived()
+{
+  return this.received;
+}
 //end your code
 
 /**
@@ -47,7 +95,19 @@ function returnObjectLiteral() {
 * received.
 */
 //your code here
+function lastReceivedMessage()
+{
+  if(this.received > 0)
+  {
+    return this.messageLog;
+  }
+  else
+  {
+    return 'No messages received';
+  }
+}
 
+MessageLog.prototype.lastReceivedMessage = lastReceivedMessage;
 //end your code
 
 /**
@@ -58,4 +118,8 @@ function returnObjectLiteral() {
 
 //your code here
 
+var myLog = new MessageLog("BlackHatGuy");
+myLog.logMessage('foo', 1);
+myLog.logMessage('bar', 1);
+myLog.logMessage('baz', 1);
 //end your code
