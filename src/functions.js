@@ -32,7 +32,7 @@ bar = function (float) {
   var check = true;
   for (var i = 0; i < float.length; i++)
   {
-    if (isNan(float[i]))
+    if (typeof (float[i]) !== 'number')
     {
       check = false;
     } 

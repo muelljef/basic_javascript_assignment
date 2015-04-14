@@ -5,3 +5,7 @@ Date End:      Mon Apr 13 17:18:30 2015 +1000
 Tasks: During this period I setup my copy/repo of the assignment in Github and 
         read the Mozilla Javascript documentation while completing the first function of object.js
         
+Date Start:    Tue Apr 14 09:45:00 2015 +1000 
+Data End:      Tue Apr 14 10:29:25 2015 +1000
+Tasks: During this period I read Mozilla Javascript documentation while completing the uselessFunction 
+        of functions.js and variableModification of variables.js. Work started on barFunction of functions.js
