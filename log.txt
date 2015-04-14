@@ -1,1 +1,7 @@
 You log goes in this  file.
+
+Date Start:    Mon Apr 13 16:41:25 2015 +1000
+Date End:      Mon Apr 13 17:18:30 2015 +1000
+Tasks: During this period I setup my copy/repo of the assignment in Github and 
+        read the Mozilla Javascript documentation while completing the first function of object.js
+        
