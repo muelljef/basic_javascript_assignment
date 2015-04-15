@@ -24,3 +24,8 @@ Date Start:     Tue Apr 14 13:30:00 2015 +1000
 Date End:       Tue Apr 14 16:03:23 2015 +1000        
 Tasks: During this period I fixed the syntax of the Date in the parseGit and GitLog object. I also finished all steps
             related to the MessageLog object. Part 1 passes all tests.
+            
+Date Start:     Wed Apr 15 20:30:00 2015 +1000
+Date End:       Wed Apr 15 21:32:41 2015 +1000            
+Task:  During this period I edited the Javascript files to conform to Google Javascript standards and to pass the JSLint
+        website tests. The code still passes all tests in the html file.
