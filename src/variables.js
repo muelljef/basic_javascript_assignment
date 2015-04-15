@@ -31,14 +31,10 @@ false otherwise
 */
 function isString(b) {
   //your code here
-  if(typeof b === 'string')
-    {
-      return true;
-    }
-  else
-    {
-      return false;
-    }
+  if (typeof b === 'string') {
+    return true;
+  }
+  return false;
   //end your code
 }
 
@@ -50,13 +46,9 @@ Output:
 return true if c is null, false otherwise
 */
 function isNull(c) {
-  if(c === null)
-    {
-      return true;
-    }
-  else
-    {
-      return false;
-    }
+  if (c === null) {
+    return true;
+  }
+  return false;
   //end your code
 }
